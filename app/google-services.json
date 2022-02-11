@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "246587434508",
+    "project_id": "tumascota-5e731",
+    "storage_bucket": "tumascota-5e731.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246587434508:android:92214070d6d4ad7031b029",
+        "android_client_info": {
+          "package_name": "com.devandreschavez.tumascota"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246587434508-5l586aevf1ajle8f484l9vp2ricopd2m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devandreschavez.tumascota",
+            "certificate_hash": "bfd65b0cf7f94294a921f00ad2c50c3a651c30a1"
+          }
+        },
+        {
+          "client_id": "246587434508-8mi0s6f2fst949h4ouflghgn5s637ueb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWQFPI42TR6QBiU-ftoSxanHv7NQdREgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246587434508-8mi0s6f2fst949h4ouflghgn5s637ueb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

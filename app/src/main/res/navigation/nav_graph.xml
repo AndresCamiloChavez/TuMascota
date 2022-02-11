@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.devandreschavez.tumascota.view.ui.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_petsFragment"
+            app:destination="@id/petsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.devandreschavez.tumascota.view.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.devandreschavez.tumascota.view.ui.auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_petsFragment"
+            app:destination="@id/petsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/petsFragment"
+        android:name="com.devandreschavez.tumascota.view.ui.home.PetsFragment"
+        android:label="fragment_pets"
+        tools:layout="@layout/fragment_pets" >
+
+        <action
+            android:id="@+id/action_petsFragment_to_reportPetFragment"
+            app:destination="@id/reportPetFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_petsFragment_to_detailPetFragment"
+            app:destination="@id/detailPetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.devandreschavez.tumascota.view.ui.home.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/reportPetFragment"
+        android:name="com.devandreschavez.tumascota.view.ui.home.ReportPetFragment"
+        android:label="fragment_report_pet"
+        tools:layout="@layout/fragment_report_pet" />
+    <dialog
+        android:id="@+id/detailPetFragment"
+        android:name="com.devandreschavez.tumascota.view.ui.home.DetailPetFragment"
+        android:label="fragment_detail_pet"
+        tools:layout="@layout/fragment_detail_pet">
+        <argument
+            android:name="petUser"
+            app:argType="com.devandreschavez.tumascota.data.models.PetUser" />
+    </dialog>
+    <fragment
+        android:id="@+id/userReportsFragment"
+        android:name="com.devandreschavez.tumascota.view.ui.home.UserReportsFragment"
+        android:label="fragment_user_reports"
+        tools:layout="@layout/fragment_user_reports" >
+        <action
+            android:id="@+id/action_userReportsFragment_to_petsFragment"
+            app:destination="@id/petsFragment"
+            app:popUpTo="@id/petsFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_petsFragment"
+        app:popUpTo="@id/petsFragment"
+        app:destination="@id/petsFragment" />
+</navigation>

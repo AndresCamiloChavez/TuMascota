@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.home.ProfileFragment">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvNameUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textSize="30sp"
+            tools:text="Andres Camilo Chavez"/>
+        <TextView
+            android:id="@+id/tvEmailUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textSize="20sp"
+            tools:text="andres.cz.chavez@gmail.com"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Número de teléfono"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPhoneUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:text="323143455"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Dirección"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAddressUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:text="Calle 34234 43"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Barrio"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUrbUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:text="San Lorenzo"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditProfile"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDITAR PERFIL"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_height="wrap_content">
+            <!--           <com.google.android.material.textview.MaterialTextView-->
+            <!--               android:padding="10dp"-->
+            <!--               android:layout_width="match_parent"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:textSize="15sp"-->
+            <!--               android:justificationMode="inter_word"-->
+            <!--               android:text="¡Hola!, al momento de actualizar tus datos no te preocupes si no se ven los cambios, tan solo tienes que cerrar la App y volver abrir para ver los cambios. Estamos trabajando en eso y en mucho más"/>-->
+
+        </com.google.android.material.card.MaterialCardView>
+        <!--       <com.google.android.gms.ads.AdView-->
+        <!--           xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+        <!--           android:id="@+id/adViewProfile"-->
+        <!--           android:layout_width="wrap_content"-->
+        <!--           android:layout_height="wrap_content"-->
+        <!--           android:layout_centerHorizontal="true"-->
+        <!--           android:layout_gravity="center"-->
+        <!--           android:layout_alignParentBottom="true"-->
+        <!--           ads:adSize="SMART_BANNER"-->
+        <!--           ads:adUnitId="ca-app-pub-3940256099942544/6300978111">-->
+        <!--&lt;!&ndash;of           ads:adUnitId="ca-app-pub-4333684413954247/5886183707">&ndash;&gt;-->
+        <!--       </com.google.android.gms.ads.AdView>-->
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>
